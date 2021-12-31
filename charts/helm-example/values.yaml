@@ -6,8 +6,8 @@ replicaCount: 1
 
 image:
   pullPolicy: IfNotPresent
-  repository: 145664717845.dkr.ecr.ap-south-1.amazonaws.com/gitops-argocd
-  version: main-4d4eb30
+  repository: us.gcr.io/vibrant-arcana-333008/vibrant-arcana
+  version: latest
 
 imagePullSecrets: []
 nameOverride: ""
