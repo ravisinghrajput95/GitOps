@@ -48,4 +48,4 @@ jobs:
     # Push the Docker image to Google Container Registry
     - name: Docker Push
       run: |-
-        docker push "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+        docker push "us.gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
