@@ -56,7 +56,9 @@ jobs:
       run: |
         version=$(cat ./charts/helm-example/values.yaml | grep version: | awk '{print $2}')
         sed -i "s/$version/$GITHUB_SHA/" ./charts/helm-example/values.yaml
-         
+
+    # Commit changes to the Github so that the Values.yaml gets updated with latest commit id/version.
+    # ArgoCD will fetch this app version.    
     - name: Commit and push changes
       uses: devops-infra/action-commit-push@v0.3
       with:
