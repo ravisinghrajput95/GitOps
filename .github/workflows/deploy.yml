@@ -41,8 +41,7 @@ jobs:
     - name: Build
       run: |-
         git_hash=$(git rev-parse --short "$GITHUB_SHA")
-        docker build \
-          --tag "us.gcr.io/$PROJECT_ID/$IMAGE:${GITHUB_REF##*/}-$git_hash"  .
+        docker build -t us.gcr.io/$PROJECT_ID/$IMAGE:${GITHUB_REF##*/}-$git_hash .
           
     # Push the Docker image to Google Container Registry
     - name: Docker Push
@@ -50,9 +49,8 @@ jobs:
         docker push us.gcr.io/$PROJECT_ID/$IMAGE:${GITHUB_REF##*/}-$git_hash
     
     # Update the version so that the latest image is deployed
-    - name: Update Version
+    - name: Update Image Version
       run: |
-          git_hash=$(git rev-parse --short "$GITHUB_SHA")
-          version=$(cat ./charts/helm-example/values.yaml | grep version: | awk '{print $2}')
-          sed -i "s/$version/${GITHUB_REF##*/}-$git_hash/" ./charts/helm-example/values.yaml
-          
+        git_hash=$(git rev-parse --short "$GITHUB_SHA")
+        version=$(cat ./charts/helm-example/values.yaml | grep version: | awk '{print $2}')
+        sed -i "s/$version/${GITHUB_REF##*/}-$git_hash/" ./charts/helm-example/values.yaml
