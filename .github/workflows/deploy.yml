@@ -56,3 +56,9 @@ jobs:
       run: |
         find . -name '*values.yaml' -exec sed -i "" "/^\([[:space:]]*version: \).*/s//\1$GITHUB_SHA/" '{}' \;
         
+    - name: Commit and push changes
+      uses: devops-infra/action-commit-push@v0.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: Version updated
+        
