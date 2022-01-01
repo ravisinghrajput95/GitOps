@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   pullPolicy: IfNotPresent
   repository: us.gcr.io/vibrant-arcana-333008/vibrant-arcana
-  version: 0e9ea53bc1554cd3f04d76cd42e628cb93cade31
+  version: 39e750b537f1038984f1f79b8e9ef86a36958560
 
 imagePullSecrets: []
 nameOverride: ""

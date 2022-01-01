@@ -1,0 +1,17 @@
+apiVersion: v1
+clusters:
+  - cluster:
+      certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUozVjU5SEdtWW9vb2M4TFhENFIxWjB3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa09UTmxOV1E1TnpNdFlXRTBaaTAwTkRBd0xUZ3pOamN0TmpNelpUWTJNbUpoTkRJMgpNQ0FYRFRJeE1USXpNVEUyTVRBeE1Gb1lEekl3TlRFeE1qSTBNVGN4TURFd1dqQXZNUzB3S3dZRFZRUURFeVE1Ck0yVTFaRGszTXkxaFlUUm1MVFEwTURBdE9ETTJOeTAyTXpObE5qWXlZbUUwTWpZd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDMkpJZEZlSmwzdGRCVWx1MGZnbFVCUmhBcDF4eGJVczE1aTdRNgozRHZ2N3owcE4zZmJGTE1JLzJtbEFpc3dNUXhnVzdhRlZQYzlNbkUwRTN2Z1U3dzZBeVJDRVdNZnNoV0UzZmVqCkpJSnpIU3N6cmc0TEhaeWJmTmdySm56d2Y0SFN6dGFIaExPRStGMkhGeWtWaXh6U21HMnpQQ1lrZ2hTQUl4alAKYWhLNTIvRVZZaXFOVlBjbDN2dWowaTF4RmQxeDlacFE5TnVrMlpNS0pkOVBQYkxmRlo3Nm4xQkprRzhoZW1EZwpwSzQvdTV1aDNlWS80OVpvZ3lmM1dvQTZTSTlpenhlZWlxM0c1N2gyS1dtN2R1d1hTMWg0aXhqTDJBTWlpeW1iCi9lQkdCdEJVS2VFRGYvc2ZTRVB3cnZWQU1VOUJNSGxXRGpuQWFkemZ4azZ6ZFBVQUVad0xrdHpaR1FtdGpzYUkKV2VsTlhtT1ZLYmJQWFA2MGRXWEcwcitKVFE2cG1DcE41ZTNWYVlVeW5HTHpRUnhhMk5YNXc1em5aRHprNVFvYgpMM0xRMnYxS2YwS3ZiaS9yTGQ4VU4zKzNQZ09jYy9PMXY2VDg0YXh3KzhxZlMzY0FWNStPMC9LVlZaeDRJQ0xBClZVaXlMb3plc25TUzBMN3cvVzQrWnh2TWdzMENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGRjNHcDRRWURONTBMUG1oZXFkZGhMZFZ2dGd0TUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQ2xwV1ZRdVFOck1RWHZrbk41UlB3OVAwREplRGd6T1YzZ3ZSYllSZnJWCmd4S1UrRTJiTU9BOE5TYktPK3NaWllVcGZlS3phakhRbVRFbnRsNno0ZFVvaTIxUWJ0SzhsYmN0bmplUkxYV3kKQ21TeEVLN1YycGJhVTM2VUNoNStGK2pHU2ZNSnZ5UzVWd0pXZUtIeUVTR3hWZithenQrZTRIQ1U1bEdjQ3haYQpXVUJWZmp5anZhZGV5TnozbVoyN3MrUTR0WG1tVE5xVjJHUjlJMkhScEF0d01Rc1JLWDlsTTNXSEJ6UGJ5czFsCkw5TmViRVZqZWxFcEI4ZU1peFdVdDBwTXFxNE9wa2hwUkd1TGxRMTJ0YzhsbTNhd1h4dWVqRC9rYXhSd2tVUWMKYXBxcXk5S0JtdWh1UEpMOVNMN3Q2NzIwSzRma0Z6ejR6aUZCOEhLdURaQ0hLSmVzQzZ2ckJIT0pxS1NWajNIagpqRXNrdWtiWmM4a3V0VjE5N3lrU0JHY3QwN3lnTFJLSzc1WUdjWjgzVUNzZU1lWVVzMTYwMTJnZlFmYURKdlFMCnhUMzkvcWdmQmJORUE3NkV0U21ER1VMMnB3OFYyK0NSMWtrYzFxWFhheHZ2N2t2ajZ6WVpOVFJ4ZEhKV3B3bDkKZkJTRVpmYmo3NU1rQmExd0x6clRSVU09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+      server: https://34.69.42.89
+    name: vibrant-arcana
+contexts:
+  - context:
+      cluster: vibrant-arcana
+      user: vibrant-arcana
+    name: vibrant-arcana
+kind: Config
+current-context: vibrant-arcana
+users:
+  - name: vibrant-arcana
+    user:
+      token: ya29.c.b0AXv0zTPllKfuRPWAMvpGruWXC6Ce68lBY0GF1DgY2UVxxihUI6fC4LkYejtBXc6sF44Iv8J5fUMUOZnBhEYH_0nqELj9jfyde4g0cjX7VekWv4g0xklychkQMEgvz2g0hWu5xnBPun9WSm4goJueReTIH2OqZOfFjHLLvp3gDRY6qVQ5cAvx9GDMOrJDapOiRvYNT-yCVmTb24vDUBpBUwXoYKmjBcE......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
