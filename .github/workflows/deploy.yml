@@ -54,6 +54,5 @@ jobs:
     # Update the version so that the latest image is deployed
     - name: Update Image Version
       run: |
-        pushd ./charts/helm-example
-        sed -i "" "/^\([[:space:]]*version: \).*/s//\1$GITHUB_SHA/" values.yaml
+        find . -name '*values.yaml' -exec sed -i "" "/^\([[:space:]]*version: \).*/s//\1$GITHUB_SHA/" '{}' \;
         
